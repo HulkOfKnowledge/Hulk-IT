@@ -4,8 +4,6 @@ import { FaUserAlt, FaRegImage, FaUserEdit } from "react-icons/fa";
 import { MdHelpCenter } from "react-icons/md";
 import { TbDownloadOff, TbDownload } from "react-icons/tb";
 import Link from "next/link";
-
-//INTERNAL IMPORT
 import Style from "./Profile.module.css";
 import images from "../../../img";
 
@@ -22,7 +20,7 @@ const Profile = () => {
         />
 
         <div className={Style.profile_account_info}>
-          <p>Shoaib Bhai</p>
+          <p>HulkOfKnowledge</p>
           <small>X038499382920203...</small>
         </div>
       </div>
@@ -57,9 +55,9 @@ const Profile = () => {
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
-            <TbDownload />
+            <TbDownloadOff />
             <p>
-              <Link href={{ pathname: "/disconnet" }}>Disconnet</Link>
+              <Link href={{ pathname: "/disconnect" }}>Disconnect</Link>
             </p>
           </div>
         </div>
