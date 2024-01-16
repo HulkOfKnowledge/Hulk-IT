@@ -136,7 +136,7 @@ const SideBar = ({ setOpenSideMenu }) => {
             onClick={() => openDiscoverMenu()}
           >
             <p>Discover</p>
-            {openDiscover ? <TiArrowSortedUp /> : <TiArrowSortedDown />}
+            <TiArrowSortedDown />
           </div>
 
           {openDiscover && (
@@ -156,7 +156,7 @@ const SideBar = ({ setOpenSideMenu }) => {
             onClick={() => openHelpMenu()}
           >
             <p>Help Center</p>
-            {openHelp ? <TiArrowSortedUp /> : <TiArrowSortedDown />}
+            <TiArrowSortedDown />
           </div>
 
           {openHelp && (
