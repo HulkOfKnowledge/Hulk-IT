@@ -23,7 +23,7 @@ const LottieAnimation = ({ animationData, loop = true }) => {
       return () => anim.destroy(); // Cleanup animation on unmount
     }, [animationData, loop]);
   
-    return <div ref={containerRef}></div>;
+    return <div ref={containerRef} style={{ marginTop: '-45px' }}></div>;
   };
 
 const HeroSection = () => {

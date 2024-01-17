@@ -26,6 +26,7 @@ import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 import favicon from "./favicon.png";
 import logo from "./logo.png";
+import logo_light from "./logo_light.png";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
@@ -79,6 +80,7 @@ export default {
   service4,
   favicon,
   logo,
+  logo_light,
   facebook,
   telegram,
   twitter,
