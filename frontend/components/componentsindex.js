@@ -4,5 +4,6 @@ import NavBar from "./NavBar/NavBar";
 import HeroSection from "./HeroSection/HeroSection";
 import Service from "./Service/Service";
 import NFTSlider from "./NFTSlider/NFTSlider";
+import Subscribe from "./Subscribe/Subscribe";
 
-export { Button, Footer, NavBar,HeroSection,Service,NFTSlider };
+export { Button, Footer, NavBar,HeroSection,Service,NFTSlider,Subscribe };

@@ -2,7 +2,7 @@ import React from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
-import { HeroSection,Service,NFTSlider } from "../components/componentsindex";
+import { HeroSection,Service,NFTSlider,Subscribe } from "../components/componentsindex";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <HeroSection />
       <Service/>
       <NFTSlider/>
+      <Subscribe/>
     </div>
   );
 };
