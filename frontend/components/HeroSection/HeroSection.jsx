@@ -1,5 +1,5 @@
 import React,{useEffect,useRef } from "react";
-import lottie from 'lottie-web';
+import LottieAnimation from "../LottieAnimation/LottieAnimation";
 import animationData from '../../img/hero.json';
 
 
@@ -8,23 +8,7 @@ import Style from "./HeroSection.module.css";
 import { Button } from "../componentsindex";
 import images from "../../img";
 
-const LottieAnimation = ({ animationData, loop = true }) => {
-    const containerRef = useRef(null);
-  
-    useEffect(() => {
-      const anim = lottie.loadAnimation({
-        container: containerRef.current,
-        renderer: 'svg',
-        loop,
-        autoplay: true,
-        animationData,
-      });
-  
-      return () => anim.destroy(); // Cleanup animation on unmount
-    }, [animationData, loop]);
-  
-    return <div ref={containerRef} style={{ marginTop: '-45px' }}></div>;
-  };
+
 
 const HeroSection = () => {
   return (
@@ -39,7 +23,7 @@ const HeroSection = () => {
           <Button btnName="Start your search" />
         </div>
         <div className={Style.heroSection_box_right}>
-          <LottieAnimation animationData={animationData} />
+          <LottieAnimation animationData={animationData} style={{marginTop:-45}} />
         </div>
       </div>
     </div>
