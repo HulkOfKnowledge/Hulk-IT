@@ -123,9 +123,14 @@
     display: none;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 768px){
+@media screen and (max-device-width: 768px){
+    .navbar{
+        width: 100%;
+        padding-block: 1rem;
+    }
+
     .navbar_container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
     }
 
     .navbar_container_left{
