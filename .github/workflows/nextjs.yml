@@ -28,6 +28,5 @@ jobs:
       - name: Deploy 🚀
         uses: HulkOfKnowledge/github-pages-deploy-action@v4.4.1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
