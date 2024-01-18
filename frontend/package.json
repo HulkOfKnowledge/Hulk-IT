@@ -1,4 +1,5 @@
 {
+  "homepage":"https://hulkofknowledge.github.io/hulk-it",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "lottie-web": "^5.12.2",
@@ -14,5 +17,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
