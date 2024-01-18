@@ -1,18 +1,24 @@
 {
-  "name": "hulk-it",
-  "version": "1.0.0",
-  "description": "Celo Inspired NFT Marketplace",
-  "main": "index.js",
+  "homepage":"https://hulkofknowledge.github.io/hulk-it",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
-  "author": "HulkOfKnowledge",
-  "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.1"
+    "lottie-web": "^5.12.2",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "hardhat": "^2.19.4"
+    "gh-pages": "^6.1.1"
   }
 }
