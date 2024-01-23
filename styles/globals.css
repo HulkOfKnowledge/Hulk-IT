@@ -6,6 +6,7 @@
   --icons-light-color: #4c577341;
   --icons-bg-color: #e2e6e9;
   --shadow-dark-color: #d3dae7;
+  --bg-shadow-dark-color: #d3dae745;
   --shadow-light-color: #fff;
   --main-bg-color: #ecf0f3;
 
@@ -42,6 +43,21 @@ a {
   background: var(--icons-color);
 }
 
+::-webkit-scrollbar{
+  width: 1rem;
+  border: 1px solid var(--main-bg-color);
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 2rem;
+  background:  var(--icons-color);
+  width: .5rem;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

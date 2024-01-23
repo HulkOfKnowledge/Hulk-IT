@@ -21,7 +21,6 @@ const Filter = () => {
   const [image, setImage] = useState(true);
   const [video, setVideo] = useState(true);
   const [music, setMusic] = useState(true);
-  const [price, setPrice] = useState(true);
 
   //FUNCTION SECTION
   const openFilter = () => {
@@ -29,14 +28,6 @@ const Filter = () => {
       setFilter(true);
     } else {
       setFilter(false);
-    }
-  };
-
-  const openPrice = () => {
-    if (!price) {
-      setPrice(true);
-    } else {
-      setPrice(false);
     }
   };
 
@@ -89,9 +80,9 @@ const Filter = () => {
       {filter && (
         <div className={Style.filter_box_items}>
           <div className={Style.filter_box_items_box}>
-            <div className={Style.filter_box_items_box_item} onClick={()=> openPrice()}>
-              <FaWallet /> <span>10 CUSD</span>
-              {price? <AiFillCloseCircle />: <TiTick />}
+            <div className={Style.filter_box_items_box_item}>
+              <FaWallet /> <span>10 ETH</span>
+              <AiFillCloseCircle />
             </div>
           </div>
 

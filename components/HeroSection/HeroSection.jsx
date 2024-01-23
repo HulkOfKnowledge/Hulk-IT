@@ -1,14 +1,9 @@
-import React,{useEffect,useRef } from "react";
-import LottieAnimation from "../LottieAnimation/LottieAnimation";
-import animationData from '../../img/hero.json';
-
+import React from "react";
 
 //INTERNAL IMPORT
 import Style from "./HeroSection.module.css";
-import { Button } from "../componentsindex";
-import images from "../../img";
-
-
+import { Button,LottieAnimation } from "../componentsindex";
+import animationData from "../../img/hero.json"
 
 const HeroSection = () => {
   return (
@@ -23,7 +18,7 @@ const HeroSection = () => {
           <Button btnName="Start your search" />
         </div>
         <div className={Style.heroSection_box_right}>
-          <LottieAnimation animationData={animationData} style={{marginTop:-45}} />
+          <LottieAnimation animationData={animationData} style={{marginTop:-50}}/>
         </div>
       </div>
     </div>

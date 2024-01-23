@@ -20,47 +20,27 @@ const NavBar = () => {
   const [profile, setProfile] = useState(false);
   const [openSideMenu, setOpenSideMenu] = useState(false);
 
+  const toggleState = (btnText) => {
+    setDiscover(btnText === 'Discover' ? (prevState) => !prevState : false);
+    setHelp(btnText === 'Help Center' ? (prevState) => !prevState : false);
+    setNotification(btnText === 'Notification' ? (prevState) => !prevState : false);
+    setProfile(btnText === 'Profile' ? (prevState) => !prevState : false);
+  };
+  
+  // Example usage in your components
   const openMenu = (e) => {
     const btnText = e.target.innerText;
-    if (btnText == "Discover") {
-      setDiscover((prevState) => !prevState);
-      setHelp(false);
-      setNotification(false);
-      setProfile(false);
-    } else if (btnText == "Help Center") {
-      setDiscover(false);
-      setHelp((prevState) => !prevState);
-      setNotification(false);
-      setProfile(false);
-    } else {
-      setDiscover(false);
-      setHelp(false);
-      setNotification(false);
-      setProfile(false);
-    }
+    toggleState(btnText);
   };
-
+  
   const openNotification = () => {
-    if (!notification) {
-      setNotification(true);
-      setDiscover(false);
-      setHelp(false);
-      setProfile(false);
-    } else {
-      setNotification(false);
-    }
+    toggleState('Notification');
   };
-
+  
   const openProfile = () => {
-    if (!profile) {
-      setProfile(true);
-      setHelp(false);
-      setDiscover(false);
-      setNotification(false);
-    } else {
-      setProfile(false);
-    }
+    toggleState('Profile');
   };
+  
 
   const openSideBar = () => {
     if (!openSideMenu) {
@@ -78,8 +58,8 @@ const NavBar = () => {
             <Image
               src={images.logo}
               alt="NFT MARKET PLACE"
-              width={150}
-              height={120}
+              width={300}
+              height={300}
             />
           </div>
           <div className={Style.navbar_container_left_box_input}>
@@ -131,10 +111,10 @@ const NavBar = () => {
           <div className={Style.navbar_container_right_profile_box}>
             <div className={Style.navbar_container_right_profile}>
               <Image
-                src={images.user1}
+                src={images.user2}
                 alt="Profile"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 onClick={() => openProfile()}
                 className={Style.navbar_container_right_profile}
               />

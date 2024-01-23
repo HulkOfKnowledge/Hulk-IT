@@ -3,10 +3,11 @@
     width: 100%;
     padding-block: 1.5rem;
     position: relative;
+   
 }
 
 .footer_box{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display:  grid;
     grid-template-columns: 1.3fr repeat(2, 1fr) 2fr;

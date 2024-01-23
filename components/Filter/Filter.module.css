@@ -5,7 +5,7 @@
 }
 
 .filter_box{
-    width: 92%;
+    width: 80%;
     margin: 0 auto;
 
     display: flex;
@@ -49,7 +49,7 @@
 }
 
 .filter_box_items{
-    width: 92%;
+    width: 80%;
     margin:  0 auto;
     display: flex;
     padding: 2rem 0;

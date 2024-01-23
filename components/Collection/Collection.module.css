@@ -46,18 +46,17 @@
 }
 
 .collection_box{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 
 @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
     .collection_title{
         width: 90%;
-        margin: 0 3rem;
     }
 
     .collection_box{
@@ -74,7 +73,6 @@
 @media screen and (min-device-width: 427px) and (max-device-width: 1024px) {
     .collection_title{
         width: 90%;
-        margin: 0 auto;
     }
 
     .collection_box{

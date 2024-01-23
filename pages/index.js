@@ -2,14 +2,40 @@ import React from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/index.module.css";
-import { HeroSection,Service,NFTSlider,Subscribe,Title,Category,Filter,NFTCard,Collection } from "../components/componentsindex";
+import {
+  HeroSection,
+  Service,
+  BigNFTSlider,
+  Subscribe,
+  Title,
+  Category,
+  Filter,
+  NFTCard,
+  Collection,
+  AudioLive,
+  FollowerTab,
+  Slider,
+  Brand,
+  Video,
+} from "../components/componentsindex";
 
 const Home = () => {
   return (
     <div className={Style.homePage}>
       <HeroSection />
+      <Title
+        heading="Trading is Simple!"
+        paragraph="Buying and Selling has never been this easy!"
+      />
       <Service />
-      <NFTSlider />
+      <BigNFTSlider />
+      <Title
+        heading="Audio Collection"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      <AudioLive />
+      <FollowerTab />
+      <Slider />
       <Collection />
       <Title
         heading="Featured NFTs"
@@ -23,6 +49,8 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
+      <Brand />
+      <Video />
     </div>
   );
 };

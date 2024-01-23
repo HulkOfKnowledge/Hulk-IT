@@ -1,1 +1,1 @@
-Frontend Notes
+NFT MARKET NOTES
