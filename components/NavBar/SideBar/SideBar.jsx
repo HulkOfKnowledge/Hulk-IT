@@ -34,30 +34,26 @@ const SideBar = ({ setOpenSideMenu }) => {
     },
     {
       name: "Author Profile",
-      link: "author-profile",
+      link: "author",
     },
     {
       name: "NFT Details",
-      link: "NFT-details",
+      link: "nft-details",
     },
     {
       name: "Account Setting",
-      link: "account-setting",
+      link: "account",
     },
     {
       name: "Connect Wallet",
       link: "connect-wallet",
-    },
-    {
-      name: "Blog",
-      link: "blog",
     },
   ];
   //------HELP CNTEER
   const helpCenter = [
     {
       name: "About",
-      link: "about",
+      link: "about-us",
     },
     {
       name: "Contact Us",
@@ -97,6 +93,7 @@ const SideBar = ({ setOpenSideMenu }) => {
     setOpenSideMenu(false);
   };
 
+  
   return (
     <div className={Style.sideBar}>
       <GrClose
@@ -105,25 +102,28 @@ const SideBar = ({ setOpenSideMenu }) => {
       />
 
       <div className={Style.sideBar_box}>
-        <Image src={images.logo} alt="logo" width={150} height={150} />
+        <Link href="/">
+          <Image src={images.logo} alt="logo" width={150} height={150} style={{ cursor: 'pointer' }} />
+        </Link>
+        
         <p>
           Discover the most outstanding articles on all topices of NFT & write
           your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
-          <a href="#">
+          <a href="#" onClick={() => closeSideBar()}>
             <TiSocialFacebook />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => closeSideBar()}>
             <TiSocialLinkedin />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => closeSideBar()}>
             <TiSocialTwitter />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => closeSideBar()}>
             <TiSocialYoutube />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => closeSideBar()}>
             <TiSocialInstagram />
           </a>
         </div>
@@ -142,7 +142,7 @@ const SideBar = ({ setOpenSideMenu }) => {
           {openDiscover && (
             <div className={Style.sideBar_discover}>
               {discover.map((el, i) => (
-                <p key={i + 1}>
+                <p key={i + 1} onClick={() => closeSideBar()}>
                   <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
                 </p>
               ))}
@@ -162,7 +162,7 @@ const SideBar = ({ setOpenSideMenu }) => {
           {openHelp && (
             <div className={Style.sideBar_discover}>
               {helpCenter.map((el, i) => (
-                <p key={i + 1}>
+                <p key={i + 1} onClick={() => closeSideBar()}>
                   <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
                 </p>
               ))}
@@ -172,8 +172,16 @@ const SideBar = ({ setOpenSideMenu }) => {
       </div>
 
       <div className={Style.sideBar_button}>
-        <Button btnName="Create" handleClick={() => {}} />
-        <Button btnName="Connect Wallet" handleClick={() => {}} />
+        <Link href={{ pathname: "/upload-nft" }}>
+          <a onClick={() => closeSideBar()}>
+            <Button btnName="Upload NFT" handleClick={() => {}} />
+          </a>
+        </Link>
+        <Link href={{ pathname: "/connect-wallet" }}>
+          <a onClick={() => closeSideBar()}>
+            <Button btnName="Connect Wallet" handleClick={() => {}} />
+          </a>
+        </Link>
       </div>
     </div>
   );

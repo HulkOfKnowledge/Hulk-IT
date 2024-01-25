@@ -1,13 +1,14 @@
 
 
 .sliderCard{
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .sliderCard_box{
     transition: all .3s ease-in;
     border-radius: 2rem;
     padding-bottom: 1rem;
+    
 }
 
 .sliderCard_box:hover{

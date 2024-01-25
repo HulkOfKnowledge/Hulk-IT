@@ -52,6 +52,10 @@ const Slider = () => {
     }
   };
 
+  
+  
+  
+
   return (
     <div className={Style.slider}>
       <div className={Style.slider_box}>

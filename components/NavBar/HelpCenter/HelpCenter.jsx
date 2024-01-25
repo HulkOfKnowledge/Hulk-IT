@@ -8,19 +8,19 @@ const HelpCenter = () => {
   const helpCenter = [
     {
       name: "About",
-      link: "aboutus",
+      link: "about-us",
     },
     {
       name: "Contact Us",
-      link: "contactus",
+      link: "contact-us",
     },
     {
       name: "Sign Up",
-      link: "signUp",
+      link: "sign-up",
     },
     {
       name: "LogIn",
-      link: "login",
+      link: "sign-in",
     },
     {
       name: "Subscription",

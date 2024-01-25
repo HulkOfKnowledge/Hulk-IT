@@ -27,6 +27,8 @@ import service4 from "./service-4.png";
 import logoLight from "./logo-light.svg";
 import logo from "./logo.png";
 import facebook from "./facebook.svg";
+import google from "./google.png";
+import x from "./x.png";
 import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
 import youtube from "./youtube.svg";
@@ -42,13 +44,14 @@ import nft_image_3 from "./nft-image-3.png";
 import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import earn from "./eran.png";
-import NFTVideo from "./nftvideo.png";
+import NFTVideo from "./nftvideo.gif";
 import hero2 from "./hero2.png";
 import upload from "./upload.png";
 import provider1 from "./provider-1.png";
 import provider2 from "./provider-2.png";
 import provider3 from "./provider-3.png";
 import provider4 from "./provider-4.png";
+import provider5 from "./provider-5.png";
 import founder1 from "./founder1.jpg";
 import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
@@ -64,6 +67,7 @@ export default {
   provider2,
   provider3,
   provider4,
+  provider5,
   upload,
   NFTVideo,
   earn,
@@ -104,6 +108,8 @@ export default {
   logo,
   logoLight,
   facebook,
+  google,
+  x,
   telegram,
   twitter,
   vector,

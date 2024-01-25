@@ -5,15 +5,19 @@ import Image from "next/image";
 import Style from "./Brand.module.css";
 import images from "../../img";
 import { Button } from "../../components/componentsindex.js";
+import Link from "next/link.js";
 
 const Brand = () => {
   return (
     <div className={Style.Brand}>
       <div className={Style.Brand_box}>
         <div className={Style.Brand_box_left}>
-          <Image src={images.logo} alt="brand logo" width={100} height={100} />
-          <h1>Earn free crypto with Ciscrypt</h1>
-          <p>A creative agency that lead and inspire.</p>
+          <Link href="/">
+            <Image src={images.logo} alt="brand logo" width={100} height={100} style={{ cursor: 'pointer' }}/>
+          </Link>
+          
+          <h1>Earn free crypto with Hulk-IT</h1>
+          <p>That's Right. Hulk-<small>IT</small> Smash!</p>
 
           <div className={Style.Brand_box_left_btn}>
             <Button btnName="Create" handleClick={() => {}} />

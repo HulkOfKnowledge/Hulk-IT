@@ -54,14 +54,18 @@ const NavBar = () => {
     <div className={Style.navbar}>
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
+          <Link href="/">
           <div className={Style.logo}>
             <Image
               src={images.logo}
               alt="NFT MARKET PLACE"
               width={300}
               height={300}
+              style={{ cursor: 'pointer' }}
             />
           </div>
+          </Link>
+          
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
               <input type="text" placeholder="Search NFT" />
@@ -103,7 +107,11 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnName="Create" handleClick={() => {}} />
+            <Link href="/upload-nft">
+              <a>
+                <Button btnName="Create" handleClick={() => {}} />
+              </a>
+            </Link>
           </div>
 
           {/* USER PROFILE */}
@@ -134,7 +142,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />

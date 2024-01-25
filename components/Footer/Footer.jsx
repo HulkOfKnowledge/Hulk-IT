@@ -15,13 +15,17 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import Style from "./Footer.module.css";
 import images from "../../img";
 import { Discover, HelpCenter } from "../NavBar/index";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className={Style.footer}>
       <div className={Style.footer_box}>
         <div className={Style.footer_box_social}>
-          <Image src={images.logo} alt="footer logo" height={100} width={100} />
+          <Link href="/">
+            <Image src={images.logo} alt="footer logo" height={100} width={100} style={{cursor:'pointer'}}/>
+          </Link>
+          
           <p>
             The world’s first and largest digital marketplace for crypto
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
