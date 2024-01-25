@@ -1,0 +1,9 @@
+-Frontend Task Remaining:
+    - Attend to user pages: - User Profile
+                            - User Nft
+                            - Edit Profile
+
+- Smart Contracts:
+    - Handle User backend.
+    - Handle Nft
+    - Handle MarketPlace.
